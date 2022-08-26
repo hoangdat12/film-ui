@@ -1,0 +1,16 @@
+@use "../../scss/" as *;
+
+.search {
+
+    .input__search {
+        margin-left: 1rem;
+        padding: 10px 20px;
+        min-width: 200px;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+}

@@ -1,0 +1,150 @@
+.comment {
+    padding: 2rem 3rem;
+    background-color: #ad655f;
+    margin: 10px 0 3rem 0;
+    border-radius: 1rem;
+
+    .comment-body {
+        background-color: #fff;
+        color: #111;
+        padding: 2rem;
+        border-radius: 1rem;
+    
+        .comment_title {
+            margin-bottom: 0;
+            font-size: 1.5rem;
+        }
+    
+        p {
+            font-weight: 300;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    
+        .comment_film {
+            position: relative;
+            display: flex;
+    
+            img {
+                border-radius: 50%;
+                margin-right: 1rem
+            }
+    
+            .title {
+                font-weight: 700;
+                margin-bottom: 0.25rem;;
+            }
+    
+            .infor__comment {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+    
+                .infor {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+    
+            p {
+                margin-bottom: 0;
+            }
+    
+            .btn_comment {
+                position: absolute;
+                bottom: -10px;
+                right: 20px;
+                display: flex;
+    
+                span {
+                    font-size: 20px;
+                    margin-right: 10px;
+                    border: 1px solid #111;
+                    padding: 5px 15px;
+                    border-radius: 10px;
+                    display: flex;
+                    cursor: pointer;
+                    transition:all 0.5s ease;
+    
+                    &:hover {
+                        background-color: #ccc;
+                        color: #111;
+                    }
+                }
+            }
+    
+            .content {
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    .comment_input {
+        display: flex;
+        margin-top: 2rem;
+    
+        .avatar {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+    
+            img {
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+    
+        .input {
+            flex: 1;
+            margin-left: 1rem;
+    
+            textarea {
+                min-height: 100px;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                padding: 1rem 1.5rem;
+            }
+    
+            .btn_post {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 10px;
+                margin-top: 0.75rem;
+    
+                button {
+                    padding: 0.375rem 1rem 0.3125rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    margin-right: 10px;
+                    font-weight: 400;
+                    border-radius: 5px;
+                    transition: all 0.3s ease-in;
+                }
+    
+                .post {
+                    background-color: #1266f1;
+                    border: none;
+                    color: #fff;
+    
+                    &:hover {
+                        background-color: #0c56d0;
+                    }
+                }
+    
+                .cancel {
+                    background-color: #fff;
+                    color: #1266f1;
+                    border: #1266f1;
+    
+                    &:hover {
+                        background-color: #f3f3f3;
+                    }
+                }
+            }
+        }
+    }
+}
+

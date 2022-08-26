@@ -1,0 +1,69 @@
+@use "../../scss/" as *;
+
+.footer {
+    position: relative;
+    transition: all 0.5s ease;
+    padding: 6rem 3rem;
+    background-image: url('https://raw.githubusercontent.com/trananhtuat/react-movie/main/src/assets/footer-bg.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .footer_container {
+        display: flex;
+
+        .footer__content {
+            flex: 1;
+            margin-right: 20px;
+
+            h3 {
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            li {
+                margin-bottom: 0.5rem;
+
+                a {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer__contact {
+            flex: 2;
+
+            .footer__icons {
+                display: flex;
+                justify-content: center;
+                font-size: 2rem;
+            }
+
+            .footer__letter {
+
+                h2 {
+                    font-size: 20px;
+                    color: #999;
+                }
+            }
+
+            .contact {
+                display: flex;
+                margin-top: 1rem;
+                padding: 0 2rem;
+
+                span {
+                    flex: 1;
+                    font-size: 3rem;
+                    cursor: pointer;
+                    transition: all 0.5s linear;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.person {
+    min-height: 100vh;
+
+    .nav__img__person {
+        position: relative;
+        height: 60vh;
+        background-image: url('https://raw.githubusercontent.com/trananhtuat/react-movie/main/src/assets/footer-bg.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .person__profile {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .profile__img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .profile__name {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+            
+            .btn-update {
+                padding: 10px 20px;
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 10px;
+                margin-top: 1rem;
+                font-size: 16px;
+                font-weight: 500;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: aquamarine;
+                    color: #111;
+                }
+            }
+        }
+    }
+
+    .nav__history__person {
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            opacity: 0.8;
+        }
+    }
+}

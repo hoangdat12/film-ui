@@ -1,0 +1,34 @@
+
+.poster__watch {
+    background-image: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/VlHt27nCqOuTnuX6bku8QZapzO.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+
+    .title_poster {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h1, h2 {
+            cursor: pointer;
+
+            &:hover {
+                color: #111;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}

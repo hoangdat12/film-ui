@@ -1,0 +1,118 @@
+.update {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('https://raw.githubusercontent.com/trananhtuat/react-movie/main/src/assets/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .container {
+        position: absolute;
+        width: 60%;
+        height: 550px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        color: #111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 3rem 1rem 3rem;
+        border-radius: 20px;
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+
+        .name {
+            margin-top: 1rem;
+        }
+
+        .email_contact {
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+
+            a {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .input {
+            margin-top: 50px;
+            width: 100%;
+
+            .input_name {
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                    
+                    label {
+                        color: #111;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .input_email {
+                margin-top: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%; 
+
+                    textarea {
+                        min-height: 80px;
+                        
+                    }
+                }
+            }
+
+            .input_conent {
+                width: 100%;
+                padding: 0.7rem 1rem;
+                font-size: 15px;
+                font-weight: 400;
+                outline: none;
+                border: 1px solid #cfd1d8;
+                border-radius: 10px;
+            }
+        }
+
+        .btn_update {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 2rem;
+
+            button {
+                padding: 0.7rem 1.5rem;
+                color: #fff;
+                background-color: #007bff;
+                border: 1px solid #007bff;
+            }
+        }
+    }
+}

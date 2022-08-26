@@ -1,0 +1,92 @@
+.select-menu{
+    width: 150px;
+    margin-left: 30px;
+    position: relative;
+
+    .select-btn{
+        display: flex;
+        height: 45px;
+        background: #ccc;
+        color: #111;
+        padding: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 8px;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+        i{
+            font-size: 25px;
+            transition: 0.3s;
+        }
+
+        span {
+            overflow-wrap: break-word;
+            white-space: normal;
+            overflow: hidden;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+    }
+
+    .options{
+        position: absolute;
+        z-index: 99;
+        top: 45px;
+        left: 0;
+        // width: 250px;
+        min-width: 150px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 0 3px rgba(0,0,0,0.1);
+        display: none;
+        max-height: 300px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .option{
+            display: flex;
+            white-space: nowrap;
+            height: 45px;
+            cursor: pointer;
+            padding: 0 10px;
+            border-radius: 8px;
+            align-items: center;
+            background: #fff;
+
+            &:hover{
+                background:#ccc;
+            }
+
+            i{
+                margin-right: 12px;
+            }
+
+            .option-text{
+                color: #333;
+            }
+        }
+    }
+}
+
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu.active .options{
+    display: block;
+}
